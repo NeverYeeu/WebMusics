@@ -19,6 +19,7 @@
 		<div class="music_col">
 			<div class="music-col-play">
 				<div class="col-play_infor">
+					<span class="identify-music" style="display: none"></span>
 					<div class="col-play_name">
 						Kênh Nghe Nhạc
 					</div>
@@ -27,12 +28,14 @@
 				</div>
 			</div>
 			<div class="col-play_control">
+				<i class="fa-solid fa-arrow-rotate-left control-icon"></i>
 				<ion-icon class="control-icon prev-song" name="play-back-outline"></ion-icon>
 				<span class="play_control-music">
 					<ion-icon class=".control-icon pause close" name="pause-circle-outline"></ion-icon>
 					<ion-icon class=".control-icon play" name="play-circle-outline"></ion-icon>
 				</span>
 				<ion-icon class="control-icon next-song" name="play-forward-outline"></ion-icon>
+				<i class="fa-solid fa-shuffle control-icon"></i>
 			</div>
 			<div class="col-play_bar">
 				<input type="range" name="time-bar" id="time-bar" value="0" step="1" min="0" max="100">

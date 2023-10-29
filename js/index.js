@@ -24,18 +24,15 @@ genreList.innerHTML = genreMusic.map(renderGenre).join('');
 	const listSong = $$('.col-song_wrap');
 	const activePause= $$('.col-song_active > .active-pause')
 	// Render Audio--------------------------------------------------------------------------------------
-	var playName = $('.col-play_name')
-	var playSinger = $('.col-play_singer')
-	var audioSong = $('#audio') 
+var playName = $('.col-play_name')
+var playSinger = $('.col-play_singer')
+let idMusic = $(".identify-music")
 	handleListSongs(listSong, songs)
 function handleListSongs(arr, newArray) {
 	arr.forEach((song, index) => {
 		song.addEventListener('click', () => {
 			// Chèn audio----------------------------------------------------------
-			const indexSong = newArray[index];
-			playName.innerText = indexSong.name
-			playSinger.innerText = indexSong.singer
-			audioSong.setAttribute('src', indexSong.linkSong)
+			handleAudio(index)
 			// Thêm hiệu ứng khi click-----------------------------
 			if($('.active-pause.open')){
 				$('.active-pause.open').classList.remove('open')
@@ -45,8 +42,7 @@ function handleListSongs(arr, newArray) {
 			activePause[index].classList.add('open')
 			// Khi phát nhạc---------------------------------------
 			audio.play()
-				pauseBtn.classList.remove('close')
-				playBtn.classList.add('close')
+				
 			//Khi tiến độ bài hát thay đổi--------------------------
 			loadRangeTime();
 		})
@@ -117,11 +113,6 @@ function controlPlay() {
 	}
 }
 controlPlay();
-// -----------------------------------------------------------------
-	const prevBtn = $('.prev-song');
-	const nextBtn = $('.next-song');
-nextBtn.onclick = ()=> {alert ('Chức năng hiện đang cập nhật!')}
-prevBtn.onclick = ()=> {alert ('Chức năng hiện đang cập nhật!')}
 
 // Hiển thị thanh thời gian--------------------------------------------------------------------------
 function loadRangeTime() {
@@ -163,3 +154,45 @@ navWebsite[2].addEventListener('click', () => {
 navWebsite[4].addEventListener('click', () => {
 	boxBackg.innerHTML = renderImage()
 })
+
+// -----------------------------------------------------------------
+const prevBtn = $('.prev-song');
+const nextBtn = $('.next-song');
+let currentMusic = +idMusic.innerText;
+const songLength = $$('.music_col-song').length;
+function handleMusic(){
+	nextBtn.addEventListener('click', () => {
+		let nextMusic = ++currentMusic;
+		if (nextMusic < songLength){
+			handleAudio(nextMusic)
+		} else {
+			handleAudio(0)
+		}
+	}) 
+	prevBtn.addEventListener('click', () => {
+		let prevMusic = --currentMusic;
+		if (prevMusic >= 0){
+			handleAudio(prevMusic)
+		} else {
+			handleAudio(songLength - 1)
+		}
+		handleAudio(prevMusic)
+	})
+} handleMusic();
+// Xư ly khi ta click vao nut shuffle
+const shuffleIcon = controlIcon[controlIcon.length-1];
+shuffleIcon.addEventListener('click', () => {
+	let numRandom = Math.floor(Math.random() * songLength);
+	console.log(numRandom);
+})
+// Xư lý khi ta click vào cac ban nhac--------------------------------
+function handleAudio(index){
+	const indexSong = songs[index];
+	playName.innerText = indexSong.name
+	playSinger.innerText = indexSong.singer
+	idMusic.innerText = indexSong.id
+	audio.setAttribute('src', indexSong.linkSong)
+	audio.play(); 
+	pauseBtn.classList.remove('close')
+	playBtn.classList.add('close')
+}

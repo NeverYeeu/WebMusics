@@ -78,7 +78,6 @@ const lyrics = [
 	
 ]
 
-const number = 1;
 
 export {lyrics}
 const images = [
