@@ -1,0 +1,100 @@
+@media only screen and (max-width: 1024px) {
+    
+}
+
+@media only screen and (max-width: 768px) {
+	.music_col:nth-child(1){
+		height: 800px;
+	}
+	.music_col:nth-child(2){
+		margin-top: 80px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.box-music{
+		display: block;
+	}
+	.music_col:nth-child(1){
+		width: 100%;
+		padding-right: 16px;
+		margin-top: 200px;
+		height: 540px;
+		overflow-y: scroll;
+	}
+	.music_col:nth-child(2){
+		position: fixed;
+		top: 20px; right: 0; left: 0;
+		margin: 0;
+	}
+	.col-play_control{
+		gap: 32px;
+	}
+	.lyrics-box_icon{display: none}
+}
+	
+@media only screen and (max-width: 480px) {
+	.music_col:nth-child(1){
+		height: 376px;
+		overflow-y: scroll;
+		position: fixed;
+		margin: 20px auto;
+	}
+	.music_col:nth-child(2).extra-lyric{
+		margin: 5px auto 0px auto;
+	}
+	.box-genre_content{
+		width: 92%;
+	}
+	.box-genre_content{
+		transform: translateY(-600px);
+		opacity: 0;
+	}
+	.box-genre_content.translate{
+		transform: translateY(10px);
+		opacity: 1;
+		visibility:visible;
+	}
+	.col_lyrics-box{
+		width: 100%;
+		max-height: 500px;
+	}
+	.lyrics-box_icon.open{
+		display: block;
+	}
+	.col_lyrics-box> li{
+		margin: 6px 0;
+	}
+	#time-bar{
+		width: 100%;
+		margin: 0px 20px;
+	}
+	.col-play_name{
+		font-size: 22px;
+	}
+	.col-play_singer{
+		font-size: 16px;
+	}
+    .col-play_control{
+		gap: 18px;
+	}
+	.col-play_control i{
+		font-size: 20px;
+	}
+	.col-play_control > .play_control-music > i{
+		font-size: 36px;
+	}
+
+	#search-song{
+		width: 100%;
+		display: none;
+	}
+	.box-nav{
+		width: 100%;
+		position: fixed;
+		right: 0; bottom: 0; left: 0px;
+		padding: 12px;
+		justify-content: center;
+		gap: 6px;
+	}
+}

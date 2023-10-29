@@ -1,0 +1,17 @@
+body{
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.history{
+	margin: 20px auto;
+	background-color: #ccc;
+	padding: 4px 12px;
+}
+.history-link{
+	text-decoration: none;
+	color: var(--white);
+	font-size: 16px;
+}
+.history-link:nth-child(3){
+	color: var(--web)
+}
+.history-link:hover{color: var(--web)}

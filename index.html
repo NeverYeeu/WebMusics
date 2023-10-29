@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/3a03dc96e6.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<title>Play Music</title>
+</head>
+<body>
+	<div class="box-background">
+	</div>
+	<div class="box-music">
+		<div class="music_col">
+			<!-- JS renderSong -->
+		</div>
+		<div class="music_col">
+			<div class="music-col-play">
+				<div class="col-play_infor">
+					<div class="col-play_name">
+						Kênh Nghe Nhạc
+					</div>
+					<div class="col-play_singer">By: Xas Duong</div>
+					<audio id="audio" src="./music/PhanManhQuynhSongs.mp3"></audio>
+				</div>
+			</div>
+			<div class="col-play_control">
+				<ion-icon class="control-icon prev-song" name="play-back-outline"></ion-icon>
+				<span class="play_control-music">
+					<ion-icon class=".control-icon pause close" name="pause-circle-outline"></ion-icon>
+					<ion-icon class=".control-icon play" name="play-circle-outline"></ion-icon>
+				</span>
+				<ion-icon class="control-icon next-song" name="play-forward-outline"></ion-icon>
+			</div>
+			<div class="col-play_bar">
+				<input type="range" name="time-bar" id="time-bar" value="0" step="1" min="0" max="100">
+			</div>
+			<div class="col_lyrics-box">
+				<div class="lyrics-box">
+					<!-- LyricSong() -->
+				</div>
+				<ion-icon class="lyrics-box_icon close" name="backspace-outline"></ion-icon>
+			</div>
+		</div>
+	</div>
+	<div class="box-genre">
+		<div class="box-genre_content">
+			<span>Bạn thích nghe nhạc gì</span>
+			<ul class="genre_list"><!--JS--></ul>
+			<div id="learnE">Học tiếng anh qua câu chuyện</div>
+		</div>
+		<div class="box-genre_overlay"></div>
+	</div>
+	<div class="box-time"></div>
+	<div class="box-nav">
+		<div id="web-home" >
+			<a href="index.html">
+				<i class="fa-solid fa-house"></i>
+			</a>
+		</div>
+		<div id="web-genre" >
+			<i class="fa-solid fa-bars"></i>
+		</div>
+		<div id="web-music" >
+			<i class="fa-solid fa-music"></i>
+		</div>
+		<div id="web-book" >
+			<a href="read.html">
+				<i class="fa-solid fa-book-open"></i>
+			</a>
+		</div>
+		<div id="web-image" >
+			<i class="fa-regular fa-image"></i>
+		</div>
+	</div>
+</body>
+<script type="module" src="js/index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
