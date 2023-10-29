@@ -196,3 +196,6 @@ function handleAudio(index){
 	pauseBtn.classList.remove('close')
 	playBtn.classList.add('close')
 }
+
+// Đóng mở khung nhạc-------------------------------------------
+// const boxMusic = $('.box-music');

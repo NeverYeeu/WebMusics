@@ -16,6 +16,7 @@
 .box-music{
 	display: flex;
 }
+.box-music.close{display: none}
 .music_col:nth-child(1){
 	width: 400px;
 	height: 462px;

@@ -100,8 +100,13 @@
 	}
 	.box-nav > div{
 		border: none;
-	background-color: rgba(0,0,0,0)
+		background-color: rgba(0,0,0,0);
+	}
+	.box-nav > div.active2{
+		background-color: transparent;
+		color: var(--web)
 
 	}
-	
+	.active2{
+	}
 }
