@@ -15,19 +15,39 @@ const songs = [
 		linkSong: "music/AviciiSongs.mp3", image: "https://i.postimg.cc/W3qsg6Ph/003.jpg"
 	},
 	{
-		id: 3, name: "VietNamSongs1",
+		id: 4, name: "VietNamSongs1",
 		singer: "Nhiều Nghệ Sĩ",
-		linkSong: "music/VietNamSongs1.mp3", image: "https://i.postimg.cc/W3qsg6Ph/003.jpg"
+		linkSong: "music/VietNamSongs1.mp3", image: "https://i.postimg.cc/g23cBKwR/004.jpg"
 	},
 	{
-		id: 3, name: "VietNamSongs2",
+		id: 5, name: "VietNamSongs2",
 		singer: "Nhiều Nghệ Sĩ",
-		linkSong: "music/VietNamSongs2.mp3", image: "https://i.postimg.cc/W3qsg6Ph/003.jpg"
+		linkSong: "music/VietNamSongs2.mp3", image: "https://i.postimg.cc/D0WnQQkS/005.jpg"
 	},
 	{
-		id: 3, name: "VietNamSongs3",
+		id: 6, name: "VietNamSongs3",
 		singer: "Nhiều Nghệ Sĩ",
 		linkSong: "music/VietNamSongs3.mp3", image: "https://i.postimg.cc/W3qsg6Ph/003.jpg"
+	},
+	{
+		id: 7, name: "EnglishSongs2",
+		singer: "Nhiều Nghệ Sĩ",
+		linkSong: "music/EnglishSongs2.mp3", image: "https://i.postimg.cc/wBsrkW78/012.jpg"
+	},
+	{
+		id: 8, name: "EnglishSongs3",
+		singer: "Nhiều Nghệ Sĩ",
+		linkSong: "music/EnglishSongs3.mp3", image: "https://i.postimg.cc/D0WnQQkS/005.jpg"
+	},
+	{
+		id: 9, name: "EnglishSongs4",
+		singer: "Nhiều Nghệ Sĩ",
+		linkSong: "music/EnglishSongs4.mp3", image: "https://i.postimg.cc/D0WnQQkS/005.jpg"
+	},
+	{
+		id: 10, name: "EnglishSongs5",
+		singer: "Nhiều Nghệ Sĩ",
+		linkSong: "music/EnglishSongs5.mp3", image: "https://i.postimg.cc/wBsrkW78/012.jpg"
 	},
 
 ]
