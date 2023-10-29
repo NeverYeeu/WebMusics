@@ -13,7 +13,23 @@ const songs = [
 		id: 3, name: "Tổng Hợp Bài Hát Của Avicii",
 		singer: "Avicii",
 		linkSong: "music/AviciiSongs.mp3", image: "https://i.postimg.cc/W3qsg6Ph/003.jpg"
-	}
+	},
+	{
+		id: 3, name: "VietNamSongs1",
+		singer: "Nhiều Nghệ Sĩ",
+		linkSong: "music/VietNamSongs1.mp3", image: "https://i.postimg.cc/W3qsg6Ph/003.jpg"
+	},
+	{
+		id: 3, name: "VietNamSongs2",
+		singer: "Nhiều Nghệ Sĩ",
+		linkSong: "music/VietNamSongs2.mp3", image: "https://i.postimg.cc/W3qsg6Ph/003.jpg"
+	},
+	{
+		id: 3, name: "VietNamSongs3",
+		singer: "Nhiều Nghệ Sĩ",
+		linkSong: "music/VietNamSongs3.mp3", image: "https://i.postimg.cc/W3qsg6Ph/003.jpg"
+	},
+
 ]
 export {songs}
 const lyrics = [
