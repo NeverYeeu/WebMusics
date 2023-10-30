@@ -1,53 +1,100 @@
+const images = [
+	{id: 1, srcImage:"https://i.postimg.cc/R0XWXT8d/001.jpg", altImage: "001.jpg"},
+	{id: 2, srcImage:"https://i.postimg.cc/s2Fm33Dq/002.jpg", altImage: "002.jpg"},
+	{id: 3, srcImage:"https://i.postimg.cc/W3qsg6Ph/003.jpg", altImage: "003.jpg"},
+	{id: 4, srcImage:"https://i.postimg.cc/g23cBKwR/004.jpg", altImage: "004.jpg"},
+	{id: 5, srcImage:"https://i.postimg.cc/D0WnQQkS/005.jpg", altImage: "005.jpg"},
+	{id: 6, srcImage:"https://i.postimg.cc/NFTfq8NW/006.jpg", altImage: "006.jpg"},
+	{id: 7, srcImage:"https://i.postimg.cc/SQGvVYNs/007.jpg", altImage: "007.jpg"},
+	{id: 8, srcImage:"https://i.postimg.cc/C1TGp7Jg/008.gif", altImage: "008.gif"},
+	{id: 9, srcImage:"https://i.postimg.cc/xdHsmc49/009.jpg", altImage: "009.jpg"},
+	{id: 10, srcImage:"https://i.postimg.cc/QthqWS7q/010.jpg", altImage: "010.jpg"},
+	{id: 11, srcImage:"https://i.postimg.cc/x1Fr5J5H/011.jpg", altImage: "011.jpg"},
+	{id: 12, srcImage:"https://i.postimg.cc/wBsrkW78/012.jpg", altImage: "012.jpg"},
+	{id: 13, srcImage:"https://i.postimg.cc/tCT25rMS/013.jpg", altImage: "013.jpg"},
+	{id: 14, srcImage:"https://i.postimg.cc/Tw0Jjmqv/014.jpg", altImage: "014.jpg"},
+	{id: 15, srcImage:"https://i.postimg.cc/qv2nXy4D/015.jpg", altImage: "015.jpg"},
+	{id: 16, srcImage:"https://i.postimg.cc/ZqT98Qf0/016.jpg", altImage: "016.jpg"},
+	{id: 17, srcImage:"https://i.postimg.cc/brGSG2mT/017.jpg", altImage: "017.jpg"},
+	{id: 18, srcImage:"https://i.postimg.cc/kgN6tCvk/018.jpg", altImage: "018.jpg"},
+	{id: 19, srcImage:"https://i.postimg.cc/SjFRJ12S/019.jpg", altImage: "019.jpg"},
+	{id: 21, srcImage:"https://i.postimg.cc/MKmfnxDg/020.jpg", altImage: "020.jpg"},
+	{id: 22, srcImage:"https://i.postimg.cc/CxdMwV6G/021.jpg", altImage: "021.jpg"},
+	{id: 23, srcImage:"https://i.postimg.cc/kM8bdWtJ/29-10-2021-1.jpg", altImage: "1.jpg"},
+	{id: 24, srcImage:"https://i.postimg.cc/MpscYDgD/29-10-2021-2.jpg", altImage: "2.jpg"},
+	{id: 25, srcImage:"https://i.postimg.cc/R0HMnLmq/gif6.gif", altImage: "gif6.gif"},
+		
+]; export {images}
 const songs = [
 	{
 		id: 1, name: "Tổng Hợp Bài Hát Của Phan Mạnh Quỳnh",
 		singer: "Phan Mạnh Quỳnh",
-		linkSong: "music/PhanManhQuynhSongs.mp3", image: "https://i.postimg.cc/R0XWXT8d/001.jpg"
+		linkSong: "music/PhanManhQuynhSongs.mp3", image: images[0].srcImage,
 	},
 	{
 		id: 2, name: "Tổng Hợp Bài Hát Của Adele",
 		singer: "Adele",
-		linkSong: "music/AdeleSongs.mp3", image: "https://i.postimg.cc/s2Fm33Dq/002.jpg"
+		linkSong: "music/AdeleSongs.mp3", image: images[1].srcImage
 	},
 	{
 		id: 3, name: "Tổng Hợp Bài Hát Của Avicii",
 		singer: "Avicii",
-		linkSong: "music/AviciiSongs.mp3", image: "https://i.postimg.cc/W3qsg6Ph/003.jpg"
+		linkSong: "music/AviciiSongs.mp3", image: images[2].srcImage
 	},
 	{
 		id: 4, name: "VietNamSongs1",
 		singer: "Nhiều Nghệ Sĩ",
-		linkSong: "music/VietNamSongs1.mp3", image: "https://i.postimg.cc/g23cBKwR/004.jpg"
+		linkSong: "music/VietNamSongs1.mp3", image: images[3].srcImage
 	},
 	{
 		id: 5, name: "VietNamSongs2",
 		singer: "Nhiều Nghệ Sĩ",
-		linkSong: "music/VietNamSongs2.mp3", image: "https://i.postimg.cc/D0WnQQkS/005.jpg"
+		linkSong: "music/VietNamSongs2.mp3", image: images[4].srcImage
 	},
 	{
 		id: 6, name: "VietNamSongs3",
 		singer: "Nhiều Nghệ Sĩ",
-		linkSong: "music/VietNamSongs3.mp3", image: "https://i.postimg.cc/W3qsg6Ph/003.jpg"
+		linkSong: "music/VietNamSongs3.mp3", image: images[5].srcImage
 	},
 	{
 		id: 7, name: "EnglishSongs2",
 		singer: "Nhiều Nghệ Sĩ",
-		linkSong: "music/EnglishSongs2.mp3", image: "https://i.postimg.cc/wBsrkW78/012.jpg"
+		linkSong: "music/EnglishSongs2.mp3", image: images[6].srcImage
 	},
 	{
 		id: 8, name: "EnglishSongs3",
 		singer: "Nhiều Nghệ Sĩ",
-		linkSong: "music/EnglishSongs3.mp3", image: "https://i.postimg.cc/D0WnQQkS/005.jpg"
+		linkSong: "music/EnglishSongs3.mp3", image: images[7].srcImage
 	},
 	{
 		id: 9, name: "EnglishSongs4",
 		singer: "Nhiều Nghệ Sĩ",
-		linkSong: "music/EnglishSongs4.mp3", image: "https://i.postimg.cc/D0WnQQkS/005.jpg"
+		linkSong: "music/EnglishSongs4.mp3", image: images[8].srcImage
 	},
 	{
 		id: 10, name: "EnglishSongs5",
 		singer: "Nhiều Nghệ Sĩ",
-		linkSong: "music/EnglishSongs5.mp3", image: "https://i.postimg.cc/wBsrkW78/012.jpg"
+		linkSong: "music/EnglishSongs5.mp3", image: images[9].srcImage
+	},
+	{
+		id: 11, name: "Violins1",
+		singer: "Unknown",
+		linkSong: "music/Violins1.mp3", image: images[10].srcImage
+	},
+	{
+		id: 12, name: "Violins2",
+		singer: "Unknown",
+		linkSong: "music/Violins2.mp3", image: images[11].srcImage
+	},
+	{
+		id: 13, name: "Violins3",
+		singer: "Unknown",
+		linkSong: "music/Violins3.mp3", image: images[12].srcImage
+	},
+	{
+		id: 14, name: "Violins4",
+		singer: "Unknown",
+		linkSong: "music/Violins4.mp3", image: images[13].srcImage
 	},
 
 ]
@@ -116,34 +163,7 @@ const lyrics = [
 
 
 export {lyrics}
-const images = [
-{id: 1, srcImage:"https://i.postimg.cc/R0XWXT8d/001.jpg", altImage: "001.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/s2Fm33Dq/002.jpg", altImage: "002.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/W3qsg6Ph/003.jpg", altImage: "003.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/g23cBKwR/004.jpg", altImage: "004.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/D0WnQQkS/005.jpg", altImage: "005.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/NFTfq8NW/006.jpg", altImage: "006.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/SQGvVYNs/007.jpg", altImage: "007.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/C1TGp7Jg/008.gif", altImage: "008.gif"},
-{id: 1, srcImage:"https://i.postimg.cc/xdHsmc49/009.jpg", altImage: "009.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/QthqWS7q/010.jpg", altImage: "010.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/x1Fr5J5H/011.jpg", altImage: "011.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/wBsrkW78/012.jpg", altImage: "012.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/tCT25rMS/013.jpg", altImage: "013.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/Tw0Jjmqv/014.jpg", altImage: "014.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/qv2nXy4D/015.jpg", altImage: "015.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/ZqT98Qf0/016.jpg", altImage: "016.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/brGSG2mT/017.jpg", altImage: "017.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/kgN6tCvk/018.jpg", altImage: "018.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/SjFRJ12S/019.jpg", altImage: "019.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/MKmfnxDg/020.jpg", altImage: "020.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/CxdMwV6G/021.jpg", altImage: "021.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/kM8bdWtJ/29-10-2021-1.jpg", altImage: "1.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/MpscYDgD/29-10-2021-2.jpg", altImage: "2.jpg"},
-{id: 1, srcImage:"https://i.postimg.cc/R0HMnLmq/gif6.gif", altImage: "gif6.gif"},
-	
-]
-export {images}
+
 
 const genreMusic = [
 	{genre: "US - UK"},

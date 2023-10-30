@@ -177,10 +177,6 @@
 	text-align: center;
 	color: var(--white);
 }
-/* BOX TIME----------------------------------------------------------------------- */
-.box-time{
-
-}
 
 
 /* BOX Genre------------------------------------------------------------------------ */
@@ -241,3 +237,39 @@
 	color: var(--web);
 	border: 1px solid var(--web)
 }
+
+/* BOX TIME----------------------------------------------------------------------- */
+.box-time.close{display: none}
+.time-wrap{
+	position: fixed;
+	top: 0; right: 0; bottom: 0; left: 0;
+	margin: 100px auto;
+	text-shadow: 1px 2px 6px #000;
+}
+  #time {
+	font-size: 8rem;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .time-wrap > h1 {
+	margin-bottom: 3rem;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .time-wrap > h2 {
+	margin-bottom: 0.5rem;
+	opacity: 0.6;
+	display: flex;
+	justify-content: center;
+  }
+  
+  @media (max-width: 700px) {
+	#time {
+	  font-size: 6rem;
+	}
+  }
+  
+
+

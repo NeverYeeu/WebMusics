@@ -40,6 +40,10 @@
 		position: fixed;
 		margin: 20px auto;
 	}
+	.music_col:nth-child(2){
+		top: 20px;
+	}
+
 	.music_col:nth-child(2).extra-lyric{
 		margin: 5px auto 0px auto;
 	}
@@ -108,5 +112,31 @@
 
 	}
 	.active2{
+	}
+	/* Box-time------------------ */
+	.time-wrap{
+		
+		margin-top: 60px;
+	}
+	#time{
+		font-size: 3.6rem;
+	}
+	.time-wrap > h1 {
+		margin-top: 40px;
+		padding: 12px;
+		font-size: 22px;
+	}
+	.time-wrap > h1 > span{
+		display: block;
+		width: 100%;
+	}
+	#greeting{
+		display: block;
+    /* width: 500%; */
+		position: absolute;
+		top: 12%;
+		left: 30%;
+		font-style: italic;
+		opacity: 0.86;
 	}
 }
