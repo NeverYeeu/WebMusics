@@ -180,7 +180,6 @@
 
 
 /* BOX Genre------------------------------------------------------------------------ */
-.box-genre{}
 .box-genre_content{
 	transform: translateY(-1200px);
 	width: 500px;
@@ -245,6 +244,7 @@
 	top: 0; right: 0; bottom: 0; left: 0;
 	margin: 100px auto;
 	text-shadow: 1px 2px 6px #000;
+	color: var(--white);
 }
   #time {
 	font-size: 8rem;

@@ -111,8 +111,6 @@
 		color: var(--web)
 
 	}
-	.active2{
-	}
 	/* Box-time------------------ */
 	.time-wrap{
 		
@@ -127,8 +125,9 @@
 		font-size: 22px;
 	}
 	.time-wrap > h1 > span{
-		display: block;
 		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 	#greeting{
 		display: block;
