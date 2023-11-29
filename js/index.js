@@ -1,4 +1,5 @@
 import {songs, lyrics, genreMusic} from "./src.js"
+import {handleWhiteDown} from "./animation.js"
 import {renderImage,renderLyrics, handleSong} from "./function.js"
 import {renderSongs, renderGenre} from "./function.js"
 // -----------------------------------------------------------------
@@ -13,8 +14,8 @@ const boxBackg = $('.box-background')
 const controlIcon = $$('.col-play_control > .control-icon')
 const timeBar = $('#time-bar');
 const boxTime = $('.box-time');
-// -----------------------------------------------------------------
-
+// -------------------------Gọi hàm animation----------------------------------------
+handleWhiteDown();
 
 // Render nội dung ra trình duyệt------------------------------------------------------------------
 boxBackg.innerHTML = renderImage();
